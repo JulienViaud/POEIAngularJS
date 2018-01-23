@@ -25,10 +25,10 @@
         controller: 'Exo03Ctrl',
         controllerAs: 'exo03',
       })
-      .when('/detail-partial/exo03', {
+      .when('/exo03/detail-partial', {
         templateUrl: 'src/app/exo03/detail-partial/detail.html',
-        controller: 'DetailPartialCtrl',
-        controllerAs: 'detailPartial',
+        controller: 'DetailCtrl',
+        controllerAs: 'DetailCtrl',
       })
       .otherwise({redirectTo:'/'});
   }

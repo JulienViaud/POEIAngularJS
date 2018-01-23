@@ -1,14 +1,14 @@
 (function() {
   'use strict';
 
-  function DetailPartialCtrl($location) {
+  function DetailCtrl($location) {
     var vm = this;
-    var titre = "coucou";
+    var titre = 'coucou';
   }
 
-  DetailPartialCtrl.$inject = ['$location'];
+  DetailCtrl.$inject = ['$location'];
 
   angular.module('daproject')
-    .controller('DetailPartialCtrl', DetailPartialCtrl);
+    .controller('DetailCtrl', DetailCtrl);
 
 })();

@@ -1,8 +1,16 @@
 
 <div id="exo03">
-	  <div class=listeFilms>listeFilms</div>
-	  <div class=detailsFilms>detailsFilms
-	  		<ng-include src="'src/app/exo03/detail-partial/detail.html'"></ng-include>
+	  <div id=listeFilms class=listeFilms>
+	  	<ul>
+	  		<li ng-repeat = "film in exo03.films">
+	  			{{film.name}}
+	  		</li>
+	  	</ul>
+	  </div>
+
+	  <div id=detailsFilms class=detailsFilms>detailsFilms
+	  		<ng-include src="'src/app/exo03/detail-partial/detail.html'">
+	  		</ng-include>
 	  </div>
 </div>
 
