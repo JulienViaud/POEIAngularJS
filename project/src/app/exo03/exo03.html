@@ -2,7 +2,7 @@
 <div id="exo03">
 	<div id=listeFilms class=listeFilms>
 	  		<div ng-repeat = "film in exo03.films">
-	  			<img class=img src="{{film.img}}"/>
+	  			<img ng-class ="{'highlight': film.select === true}" ng-click= "exo03.clic($event)" class=img src="{{film.img}}"/>
 	  		</div>
 	</div>
 
