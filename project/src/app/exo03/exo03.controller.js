@@ -11,7 +11,7 @@
       vm.clic = clicPhoto;
 
       function clicPhoto($event){
-            var indexFilms = _.findIndex(vm.films, function(o) { return o.img == $event.target.src; });
+            var indexFilms = _.findIndex(vm.films, function(o) { return o.img === $event.target.src; });
             vm.films[indexFilms].select = true;
             //console.log($event.target.src);
       }
