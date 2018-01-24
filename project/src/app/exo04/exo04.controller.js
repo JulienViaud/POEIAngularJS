@@ -1,20 +1,19 @@
 (function() {
   'use strict';
 
-  function Exo04Ctrl($location) {
+  function Exo04Ctrl(settingService) {
     var vm = this;
     vm.txt;
-    vm.clicBouton=clicBouton;
+    vm.supService = settingService;
+    vm.clicBouton = clicBouton;
 
     function clicBouton(){
-
-            console.log(vm.txt);
+      settingService.city = vm.txt;
     }
+  }
 
-  Exo04Ctrl.$inject = ['$location'];
+  Exo04Ctrl.$inject = ['settingService'];
 
-
-}
   angular.module('daproject')
     .controller('Exo04Ctrl', Exo04Ctrl);
 
