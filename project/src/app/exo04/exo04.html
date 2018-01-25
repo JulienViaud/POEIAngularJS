@@ -1,0 +1,11 @@
+        <div ng-controller= "Exo04Ctrl">
+  			<input ng-model="exo04.txt" type="text" name="">
+
+  			<button ng-click= "exo04.clicBouton()" type="button">Search!</button>
+            <div>city : {{exo04.supService.city}}</div>
+            <div>
+              <img src="http://openweathermap.org/img/w/{{exo04.meteoService.liste[0].weather[0].icon}}.png">
+              {{exo04.meteoService.liste[0].main.temp}}
+          </div>
+
+		</div>
