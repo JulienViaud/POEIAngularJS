@@ -2,20 +2,19 @@
   'use strict';
 
 
-  function FinalCtrl($location) {
+  function FinalCtrl($location,searchConfigService) {
   	var vm  =  this;
+    vm.input;
+    vm.supService = searchConfigService;
+    vm.click = clicBouton;
 
-    vm.inputS ='';
-    vm.affiche = affiche;
-
-    function affiche(){
-       vm.inputS;
+    function clicBouton(){
+       searchConfigService.ingredient = vm.input;
+    }
   }
 
-}
 
-
-  FinalCtrl.$inject = ['$location'];
+  FinalCtrl.$inject = ['$location','searchConfigService'];
 
 
   angular.module('daproject')
