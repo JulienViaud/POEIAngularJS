@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  function Exo04Ctrl(settingService) {
+  function Exo04Ctrl(settingService,meteoService) {
     var vm = this;
     vm.txt;
     vm.supService = settingService;
@@ -12,7 +12,7 @@
     }
   }
 
-  Exo04Ctrl.$inject = ['settingService'];
+  Exo04Ctrl.$inject = ['settingService','meteoService'];
 
   angular.module('daproject')
     .controller('Exo04Ctrl', Exo04Ctrl);
