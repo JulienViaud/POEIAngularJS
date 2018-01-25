@@ -5,6 +5,7 @@
     var vm = this;
     vm.txt;
     vm.supService = settingService;
+    vm.meteoService = meteoService;
     vm.clicBouton = clicBouton;
 
     function clicBouton(){
