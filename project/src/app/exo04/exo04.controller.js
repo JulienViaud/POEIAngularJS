@@ -9,6 +9,7 @@
 
     function clicBouton(){
       settingService.city = vm.txt;
+      meteoService.getMeteo();
     }
   }
 
