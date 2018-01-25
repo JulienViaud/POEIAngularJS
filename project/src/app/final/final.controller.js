@@ -6,15 +6,17 @@
   	var vm  =  this;
     vm.input;
     vm.supService = searchConfigService;
+    vm.searchConfigService = searchConfigService;
     vm.click = clicBouton;
 
     function clicBouton(){
-       searchConfigService.ingredient = vm.input;
+      vm.searchConfigService.ingredient = vm.input;
+      vm.searchConfigService.getCocktail();
     }
   }
 
 
-  FinalCtrl.$inject = ['$location','searchConfigService'];
+  FinalCtrl.$inject = ['$location','searchConfigService','searchConfigService'];
 
 
   angular.module('daproject')
